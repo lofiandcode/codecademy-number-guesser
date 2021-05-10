@@ -7,8 +7,8 @@ const generateTarget = () => {
   return Math.floor(Math.random() * 10);
 }
 
-const compareGuesses = (computerGuess, humanGuess, targetGuess) => {
-  return difference(playerGuess, targetNum) <= difference(computerGuess, targetNum);
+const compareGuesses = (humanGuess, computerGuess, targetNum) => {
+  return difference(humanGuess, targetNum) <= difference(computerGuess, targetNum);
 }
 
 const difference = (num1, num2) => {
