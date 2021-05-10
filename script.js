@@ -16,12 +16,8 @@ const difference = (num1, num2) => {
 }
 
 const updateScore = winner => {
-  if (winner === 'human') {
-    humanScore++;
-  } 
-  if (winner === 'computer') {
-    computerScore++;
-  }
+  if (winner === 'human') humanScore++;
+  if (winner === 'computer') computerScore++;
 }
 
 const advanceRound = () => {
