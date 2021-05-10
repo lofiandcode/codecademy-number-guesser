@@ -14,3 +14,12 @@ const compareGuesses = (computerGuess, humanGuess, targetGuess) => {
 const difference = (num1, num2) => {
   return Math.abs(num1 - num2);
 }
+
+const updateScore = winner => {
+  if (winner === 'human') {
+    humanScore++;
+  } 
+  if (winner === 'computer') {
+    computerScore++;
+  }
+}
