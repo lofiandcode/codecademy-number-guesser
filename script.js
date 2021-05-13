@@ -8,7 +8,16 @@ const generateTarget = () => {
 }
 
 const compareGuesses = (humanGuess, computerGuess, targetNum) => {
+  if (isInvalidInput(humanGuess)) {
+    alert('Please enter a number between 0 and 9.');
+    return;
+  }
   return difference(humanGuess, targetNum) <= difference(computerGuess, targetNum);
+}
+
+const isInvalidInput = input => {
+  const inputAsInt = parseInt(input);
+  return inputAsInt < 0 || inputAsInt > 9;
 }
 
 const difference = (num1, num2) => {
